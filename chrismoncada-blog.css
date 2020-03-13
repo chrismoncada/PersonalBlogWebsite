@@ -1,0 +1,170 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.header { 
+    grid-area: 1 / 1 / 2 / 6;
+ }
+
+ #name > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Handlee', cursive;
+    font-size: 28pt;
+    color: #000000;
+    padding: 25px 0 0 0;
+}
+
+#nav {
+    background-color: #fff;
+    color: #000000;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+#nav > li {
+    display: inline-flex;
+    padding: 0 25px 0 25px;
+    font-size: 24px;
+
+}
+
+#nav > li > a {
+    text-decoration: none;
+    color: #000000;
+}
+#nav > li > a:hover {
+    color: #c1c1c1;
+}
+
+.new { 
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(https://ih0.redbubble.net/image.337786787.7341/flat,550x550,075,f.jpg);
+    border-radius: 15px 50px 30px;
+}
+
+.new > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.new > a:hover {
+    color: #c1c1c1;
+}
+
+.old {
+     grid-area: 5 / 2 / 6 / 3; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: auto;
+     width: auto;
+     font-family: 'Spartan', sans-serif;
+     background-image: url(https://www.backdroplab.com/wp-content/uploads/2018/07/001-Photography-backdrop-light-pastel-blue.jpg);
+     border-radius: 15px 50px 30px;
+}
+
+.old > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.old > a:hover {
+    color: #c1c1c1;
+}
+
+.older {
+     grid-area: 7 / 2 / 8 / 3; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Spartan', sans-serif;
+     background-image: url(https://cdn.shopify.com/s/files/1/2561/5078/products/F947.1_20593efd-1745-4f34-90d7-e7ed4d563690_1600x.jpg?v=1571610044);
+     border-radius: 15px 50px 30px;  
+}
+
+.older > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.older > a:hover {
+    color: #c1c1c1;
+}
+
+.footer {
+     grid-area: 9 / 1 / 10 / 4;
+     background-color: #c1c1c1;
+     font-family: 'Spartan', sans-serif;
+     padding: 45px 20px 0 25px;
+     color: #fff;
+}
+
+@media(min-width: 300px) and (max-width:600px) {
+    .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: .15fr repeat(3, 1fr) .15fr;
+grid-column-gap: 0px;
+grid-row-gap: 30px;
+    }
+        
+    .header { 
+        grid-area: 1 / 1 / 2 / 6;
+    }
+    
+    .new { 
+        grid-area: 2 / 3 / 3 / 4;
+     }
+
+     .old {
+        grid-area: 3 / 3 / 4 / 4; 
+     }
+
+     .older {
+        grid-area: 4 / 3 / 5 / 4; 
+     }
+
+     .footer {
+        grid-area: 5 / 1 / 6 / 61;
+     }
+}
+
+
+@media(min-width:900px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .header { 
+        grid-area: 1 / 1 / 2 / 11;
+     }
+     .new { 
+        grid-area: 4 / 2 / 7 / 4;
+     }
+     .old {
+        grid-area: 4 / 5 / 7 / 7; 
+     }
+     .older {
+        grid-area: 4 / 8 / 7 / 10; 
+     }
+     .footer {
+        grid-area: 10 / 1 / 11 / 11;
+     }
+}
