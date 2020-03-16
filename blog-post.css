@@ -13,14 +13,14 @@
   grid-area: 1 / 1 / 2 / 6;
 }
 
-.image {
+figure {
   grid-area: 2 / 3 / 3 / 4;
   position: relative;
   border-radius: 15px;
   background-size: contain;
 }
 
-image>p {
+figcaption {
   position: relative;
 }
 
